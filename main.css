@@ -1,0 +1,525 @@
+dbhjhfgwgiug
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: radial-gradient(circle, rgb(227, 226, 223) 0%, rgb(107, 177, 201) 100%); 
+    
+}
+
+/* Header Style */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Cormorant Garamond";
+    background: lightblue;
+    padding: 10px 20px;
+}
+
+/* Ensure color is applied to .fix class */
+.header .fix {
+    font-family: "Cormorant Garamond";
+    font-size: 50px;
+    /* Increased font size */
+    color: #926f34 !important;
+    /* Use !important to enforce the color */
+    margin-right: 30px;
+}
+
+.fix a {
+    text-decoration: none;
+    color: #926f34 !important;
+    font-size: 60px !important;
+}
+
+.head {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.head li {
+    margin-right: 20px;
+    display: inline;
+}
+
+.head a {
+    text-decoration: none;
+    color: #1d2d44;
+    font-size: 20px;
+    margin-right: 12px;
+}
+
+.head .ai {
+    text-decoration: none;
+    color: #1d2d44;
+    font-size: 20px;
+    margin-right: 3px;
+    display: inline;
+    line-height: 25px;
+    top: 3px;
+}
+
+/* DROPDOWN SETUP */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.drop {
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: #1d2d44;
+    padding: 14px 16px;
+    background-color: inherit;
+    margin: 0;
+    
+    font-family: "Cormorant Garamond", serif;
+    cursor: pointer;
+    text-decoration: none; 
+    display: inline-block;
+}
+
+.dropdown-menu {
+    display: none;
+    flex-direction: column; 
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 0;
+    list-style: none;
+}
+
+.dropdown-menu a {
+    color: black;
+    text-decoration: none;
+    text-align: left;
+    display: block;
+    padding: 12px 16px;
+    margin-right: 20px;
+    font-size: 16px;
+}
+
+.dropdown-menu a:hover {
+    background-color: #457b9d; 
+    color: white; 
+}
+
+.dropdown:hover .dropdown-menu {
+    display: flex;
+}
+
+.footer {
+    font-family: "Cormorant Garamond";
+    background: lightblue;
+    color: #1d2d44;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: left;
+    
+
+}
+
+.about {
+    width: 27%;
+     background: #457b9d;
+    border-radius: 15px;
+    padding: 2%;
+    margin: 1%;
+    float: left;
+    height: auto;
+    color: whitesmoke;
+
+}
+
+/* Slideshow CSS */
+.rectangle-22 {
+    background: #457b9d;
+    height: 50px;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+
+}
+
+/* Slideshow CSS */
+.rectangle-22 {
+    background: #457b9d;
+    height: 50px;
+    position: relative;
+}
+
+.slideshow-container {
+    display: flex;
+    width: auto;
+    transition: transform 0.5s ease-in-out;
+    height: 100%;
+}
+
+.slide {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    cursor: pointer;
+    margin-top: 8px;
+
+}
+
+.slideshow-nav {
+    position: absolute;
+    top: 50%;
+    /* Center the buttons vertically */
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateY(-50%);
+    /* Adjust alignment */
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.slideshow-nav button {
+    background: none;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    /* Increase button padding for better spacing */
+    cursor: pointer;
+    font-size: 18px;
+    /* Adjust button font size */
+    width: 40px;
+    /* Set a fixed width to the buttons */
+    height: 40px;
+    /* Set a fixed height to the buttons */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Style for Icons */
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    color: #1d2d44;
+    font-size: 24px;
+    margin-left: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    /* Make it clear it's clickable */
+}
+
+.icon:hover {
+    color: #926f34;
+}
+
+/* Font Awesome Icons */
+.icon i {
+    font-size: 24px;
+}
+
+/* Specific styles for each icon */
+.icon .fa-search::before {
+    content: "\f002";
+}
+
+.icon .fa-user::before {
+    content: "\f007";
+}
+
+.icon .fa-heart::before {
+    content: "\f004";
+}
+
+.icon .fa-bag-shopping::before {
+    content: "\f290";
+}
+
+/*  Search Bar Styles (Soko Glam Inspired) */
+.search-container {
+    position: absolute;
+    top: 19%;
+    /* Positioned directly below the header */
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    z-index: 100;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-container.active {
+    display: flex;
+}
+
+.search-input-wrapper {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    /* Take up most of the header width */
+    max-width: 800px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    margin: 0 auto;
+    /* Center horizontally */
+}
+
+#search-input {
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    width: 100%;
+    color: #666;
+}
+
+#search-input::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+#search-close-icon {
+    margin-right: 10px;
+    color: #333;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#search-results {
+    position: absolute;
+    top: 100%;
+    /* Position results below the search input */
+    left: 0;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 10;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+#search-results a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    border-bottom: 1px solid #eee;
+}
+
+#search-results a:hover {
+    background-color: #f5f5f5;
+}
+
+.form-container{
+    
+        position: absolute; /* or absolute if you prefer */
+        top: 50%;
+        padding-bottom: 590px;
+        left: 50%;
+        bottom: 50%;
+        transform: translate(-50%, -50%);
+        width: 600px;
+        max-width: 90%;
+        color: #515c6c;
+        border-radius: 10px;
+        box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
+        overflow: hidden;
+        background: radial-gradient(circle, rgb(189, 168, 92) 0%, rgb(107, 177, 201) 100%);
+    }
+    
+    
+    
+    
+  
+  
+ 
+
+#pipo {
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    width: 50%;
+    /* Adjust as needed */
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    border-radius: 0px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.popup-content {
+    position: relative;
+}
+
+.close-popup {
+    position: absolute;
+    top: -9px;
+    right: -10px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    .popup {
+        width: 90%;
+        /* Almost full width on small screens */
+        padding: 10px;
+        font-size: 0.9em;
+        /* Smaller font size for readability */
+    }
+
+    .close-popup {
+        top: 5px;
+        right: 10px;
+        font-size: 18px;
+    }
+}
+  
+
+  .product img {
+    width: 100%; 
+    max-width: 200px; 
+    height: auto; 
+    display:block; 
+    margin: 0; 
+}
+
+.font{
+    font-family: "Cormorant Garamond";
+
+}
+.recommended-product {
+    text-align: center;
+    margin: 50px auto;
+    padding: 30px;
+    max-width: 600px;
+    background-color: #fffafc;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    font-family: 'Cormorant Garamond', serif;
+  }
+  
+  .recommended-product h2 {
+    font-size: 28px;
+    color: #b76e79;
+    margin-bottom: 20px;
+  }
+  
+  .recommended-product p {
+    font-size: 18px;
+    color: #444;
+    margin-top: 15px;
+  }
+  
+  .product-img {
+    max-width: 100%;
+    width: 300px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+  }
+  
+  .product-img:hover {
+    transform: scale(1.05);
+  }
+  
+
+  .search-container {
+    display: none;
+    /* Your default search bar styles */
+  }
+  
+  .search-container.active {
+    display: block;
+    /* Styles when search bar is active (visible) */
+  }
+  
+  /* Add this to your main.css (or in a <style> tag in your HTML if you prefer) */
+.product.highlighted {
+    box-shadow: 0px 0px 10px rgba(0, 123, 255, 0.7); /* Example:  Blue shadow */
+    /* You can also add things like a border, background-color, etc. */
+    transition: box-shadow 0.3s ease; /* Smooth transition */
+}
+.stars {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+}
+
+.stars input[type="radio"] {
+    display: none;
+}
+
+.stars label {
+    font-size: 2em;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.stars input[type="radio"]:checked ~ label,
+.stars label:hover,
+.stars label:hover ~ label {
+    color: gold;
+    transition: color 0.2s;
+}
+
+a.drop {
+    font-weight: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

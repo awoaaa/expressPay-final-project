@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+    color: #333;
+}
+
+/* Container Card */
+.container {
+    background: #fff;
+    width: 450px;
+    padding: 2rem;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease;
+}
+.container:hover {
+    transform: translateY(-3px);
+}
+
+/* Form Title */
+.form-title {
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #c9d6ff;
+    color: #4a5ba0;
+}
+
+/* Input Group */
+.input-group {
+    margin-bottom: 1.2rem;
+}
+.input-group i {
+    margin-right: 8px;
+    color: #4a5ba0;
+}
+.input-group label {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 4px;
+    color: #555;
+}
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+.input-group input:focus {
+    border-color: #5c6bc0;
+}
+
+/* Buttons */
+.btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #5c6bc0;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+.btn:hover {
+    background-color: #4a5ba0;
+}
+
+/* Links and Switch Forms */
+.links {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+.links p {
+    display: inline;
+}
+.links button {
+    background: none;
+    border: none;
+    color: #5c6bc0;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0;
+}
+.links button:hover {
+    text-decoration: underline;
+}
+
+/* Recover Password */
+.recover {
+    text-align: right;
+    margin-top: -8px;
+    margin-bottom: 1rem;
+}
+.recover a {
+    color: #5c6bc0;
+    font-size: 0.85rem;
+    text-decoration: none;
+}
+.recover a:hover {
+    text-decoration: underline;
+}

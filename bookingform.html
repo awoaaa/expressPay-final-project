@@ -1,0 +1,53 @@
+A simple HTML form that allows users to:
+Enter their name, email and number 
+Select a date and time
+Choose a room or service (maybe a dropdown)
+Click “Book Now” to submit
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Booking Form</title>
+    </head>
+    <body>
+
+<form action="saved_bookinginfo.php" method="post">
+    <!-- User Information -->
+        <br>
+       First Name: <input type="text" name="firstname" required>
+       <br>
+       <br>
+       Last Name: <input type="text" name="lastname" required>
+       <br>
+       <br>
+       Email Address: <input type="email" name="emailaddress" required>
+       <br>
+       <br>
+       Phone Number: <input type="number" name="phonenumber" required>
+       <br>
+       <br>
+
+       <!-- Selecting a room -->
+    <label for="room_id">Choose a Room:</label>
+    <select name="room_id" id="room_id" required>
+    <option value="">--Select a place--</option>
+    <option value="1">--City Apartment--</option>
+    <option value="2">--BeachHouse--</option>
+    <option value="3">--Villa--</option>
+</select><br><br>
+
+    <!-- Check in/out Information -->
+    Check-in date:
+    <input type="date" name="checkin_date" required><br><br>
+    Number of guests:
+    <input type="number" name="numof_guests" required><br><br>
+   Check-out Date:
+    <input type="date" name="checkout_date" required><br><br>
+
+    <!--Submit button -->
+    <button type="submit">BOOK NOW</button>
+    </form>
+
+</body>
+</html>
